@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura Matera</title>
+    
+    <link rel="icon" href="assets/favicon/logo.png">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/components/nav.css">
+    <link rel="stylesheet" href="css/components/cards.css">
+    <link rel="stylesheet" href="css/components/button.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+</head>
+<body>
+    <header class="header-global">
+        <div class="logo">Cultura Matera</div>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        
+        <nav class="tabs-nav" aria-label="Navegación del catálogo">
+            <ul class="tabs-list">
+                <li><button class="tab-btn active" data-target="seccion-inicio">Inicio</button></li>
+                <li><button class="tab-btn" data-target="seccion-productos">Productos</button></li>
+                <li><button class="tab-btn" data-target="seccion-pedido">Pedido</button></li>
+            </ul>
+        </nav>
+
+        <div class="tabs-content">
+            
+            <section id="seccion-inicio" class="tab-section active">
+                <h2>Bienvenidos a Cultura Matera</h2>
+                <p>Navegá por las pestañas para ver nuestro catálogo exclusivo de mates y más.</p>
+            </section>
+
+            <section id="seccion-productos" class="tab-section">
+                <h2>Catálogo de Productos</h2>
+                <div class="productos-grid">
+                    <!-- Aca van las cards de los productos-->
+                </div>
+            </section>
+
+            <section id="seccion-pedido" class="tab-section">
+                <h2>Iniciá tu pedido</h2>
+                <form id="formulario-compra" class="form-container">
+                    <!--Aca se hace el formulario de pedido-->
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer-global">
+        <p>&copy; Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
