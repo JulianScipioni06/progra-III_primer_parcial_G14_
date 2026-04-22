@@ -1,0 +1,14 @@
+/*Variables*/
+:root {
+    --verde: #4f5d3d;
+    --marron: #7d5c3e;
+    --blanco: #f5f2e9;
+    --gris-claro: #eae3d2;
+}
+
+*{
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
