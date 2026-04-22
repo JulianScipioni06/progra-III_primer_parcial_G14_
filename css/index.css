@@ -1,0 +1,7 @@
+.datos-cliente { 
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 30%;
+    /* Hice que los datos queden en columna y acomode el tamaño */
+}
