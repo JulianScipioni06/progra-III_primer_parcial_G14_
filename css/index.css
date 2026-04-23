@@ -1,10 +1,9 @@
-.datos-cliente { 
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    width: 30%;
-    /* Hice que los datos queden en columna y acomode el tamaño */
-/*Variables*/
+@import url(./components/button.css);
+@import url(./components/cards.css);
+@import url(./components/footer.css);
+@import url(./components/nav.css);
+
+
 :root {
     --verde: #4f5d3d;
     --marron: #7d5c3e;
@@ -12,9 +11,93 @@
     --gris-claro: #eae3d2;
 }
 
-*{
+* {
     font-family: "Inter", sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 40px 0; 
+    width: 100%;
+    height: 76vh;
+}
+
+.productos-grid {
+    display: flex;
+    flex-direction: row;
+}
+
+#seccion-productos h2{
+    margin-bottom: 8px;
+}
+
+.tabs-list {
+    display: flex;          
+    justify-content: center; 
+    gap: 10px;              
+    list-style: none;        
+    padding: 0;
+    margin: 0;
+}
+
+
+.tab-btn {
+    padding: 10px 25px;
+    background-color: var(--gris-claro); 
+    color: var(--verde);
+    border: none;
+    border-radius: 8px 8px 0 0; 
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+.tab-btn:hover {
+    background-color: var(--marron);
+    color: var(--blanco);
+}
+
+.tab-btn.active {
+    background-color: var(--verde);
+    color: var(--blanco);
+    border-bottom: 3px solid var(--marron); 
+}
+
+.tab-section {
+    display: none; 
+}
+
+
+.tab-section.active {
+    display: block; 
+}
+
+
+.tab-section.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center; 
+    padding: 20px 0;
+}
+
+#formulario-compra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.datos-cliente { 
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 30%;
 }

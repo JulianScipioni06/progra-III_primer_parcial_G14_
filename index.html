@@ -7,20 +7,13 @@
     
     <link rel="icon" href="assets/favicon/logo.png">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/components/nav.css">
-    <link rel="stylesheet" href="css/components/cards.css">
-    <link rel="stylesheet" href="css/components/button.css">
-    <link rel="stylesheet" href="css/components/footer.css">
 </head>
 <body>
     <header class="header-global">
-        <div class="logo">Cultura Matera</div>
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-            </ul>
-        </nav>
+        <div class="logo">
+            <img src="./assets/favicon/logo.png" alt="Logo-principal">
+            <h1>Cultura Matera</h1>
+        </div>
     </header>
 
     <main class="main-container">
@@ -34,7 +27,6 @@
         </nav>
 
         <div class="tabs-content">
-            
             <section id="seccion-inicio" class="tab-section active">
                 <h2>Bienvenidos a Cultura Matera</h2>
                 <p>Navegá por las pestañas para ver nuestro catálogo exclusivo de mates y más.</p>
@@ -43,7 +35,27 @@
             <section id="seccion-productos" class="tab-section">
                 <h2>Catálogo de Productos</h2>
                 <div class="productos-grid">
-                    <!-- Aca van las cards de los productos-->
+                    <article class="card-vertical">
+                        <img src="./assets/img/mate-imperial.jpg" alt="mate imperial" class="card-vertical-imagen">
+                        <div class="card-vertical-contenido"> 
+                            <h4 class="card-vertical-titulo">Mate Imperial</h4>
+                            <p class="card-vertical-descripcion">Mate imperial de Cuero con Virola de Acero</p>
+                        </div>
+                    </article>
+                    <article class="card-vertical">
+                        <img src="./assets/img/canasta-cuero.jpg" alt="bolso-matero" class="card-vertical-imagen">
+                        <div class="card-vertical-contenido"> 
+                            <h4 class="card-vertical-titulo">Canasta de Cuero</h4>
+                            <p class="card-vertical-descripcion">canasta de cuero ideal para llevar el mate</p>
+                        </div>
+                    </article>
+                    <article class="card-vertical">
+                        <img src="./assets/img/bombilla-pico-loro-alpaca.png" alt="bombilla pico loro" class="card-vertical-imagen">
+                        <div class="card-vertical-contenido"> 
+                            <h4 class="card-vertical-titulo">Bombilla Pico Loro</h4>
+                            <p class="card-vertical-descripcion">Bombilla Pico loro hecha de alpaca</p>
+                        </div>
+                    </article>
                 </div>
             </section>
 
@@ -64,63 +76,63 @@
                     <h3>Arma tu Pedido</h3>
                     <h4>Mates</h4>
                     <div class="mates">
-                    <label for="">Tipo:</label>
-                    <select>
-                        <option value="">Seleccione una opcion...</option>
-                        <option value="">Imperial</option>
-                        <option value="">Camionero</option>
-                        <option value="">Torpedo</option>
-                        <option value="">Criollo</option>
-                    </select>
-                    <br>
+                        <label for="">Tipo:</label>
+                        <select>
+                            <option value="">Seleccione una opcion...</option>
+                            <option value="">Imperial</option>
+                            <option value="">Camionero</option>
+                            <option value="">Torpedo</option>
+                            <option value="">Criollo</option>
+                        </select>
+                        <br>
 
-                    <label for="">Color:</label>
-                    <select>
-                        <option value="">Seleccione una opcion...</option>
-                        <option value="">Negro</option>
-                        <option value="">Marron</option>
-                    </select>
-                    <br>
-                    <label for="">Tamaño</label>
-                    <br>
-                    <label for="">S</label>
-                    <input type="checkbox">
-                    <label for="">M</label>
-                    <input type="checkbox">
-                    <label for="">L</label>
-                    <input type="checkbox">
-                    <label for="">XL</label>
-                    <input type="checkbox">
-                    <br>
-                    <label for="">Material:</label>
-                    <select>
-                        <option value="">Seleccione una opcion...</option>
-                        <option value="">Calabaza</option>
-                        <option value="">Acero</option>
-                        <option value="">Algorrobo</option>
-                    </select>
+                        <label for="">Color:</label>
+                        <select>
+                            <option value="">Seleccione una opcion...</option>
+                            <option value="">Negro</option>
+                            <option value="">Marron</option>
+                        </select>
+                        <br>
+                        <label for="">Tamaño</label>
+                        <br>
+                        <label for="">S</label>
+                        <input type="checkbox">
+                        <label for="">M</label>
+                        <input type="checkbox">
+                        <label for="">L</label>
+                        <input type="checkbox">
+                        <label for="">XL</label>
+                        <input type="checkbox">
+                        <br>
+                        <label for="">Material:</label>
+                        <select>
+                            <option value="">Seleccione una opcion...</option>
+                            <option value="">Calabaza</option>
+                            <option value="">Acero</option>
+                            <option value="">Algorrobo</option>
+                        </select>
                     </div>
-                
+                    
                     <h4>Bolsos y Materas</h4>
                     <div class="bolsos">
-                    <ul>
-                        <li><label for="">Bolso Matero </label><input type="checkbox"></li>
-                        <li><label for="">Canasta de Cuero </label><input type="checkbox"></li>
-                        <li><label for="">Canaste de Ecocuero </label><input type="checkbox"></li>
-                    </ul>
+                        <ul>
+                            <li><label for="">Bolso Matero </label><input type="checkbox"></li>
+                            <li><label for="">Canasta de Cuero </label><input type="checkbox"></li>
+                            <li><label for="">Canaste de Ecocuero </label><input type="checkbox"></li>
+                        </ul>
                     </div>
 
                     <h4>Bombillas y Bombillones</h4>
                     <div class="bombillas">
-                    <ul>
-                        <li><label for="">Bombillon de Alpaca </label><input type="checkbox"></li>
-                        <li><label for="">Bombillon de Acero Inoxidable </label><input type="checkbox"></li>
-                        <li><label for="">Bombilla Pico Loro Alpaca </label><input type="checkbox"></li>
-                        <li><label for="">Bombilla Pico Loro Acero Inoxidable </label><input type="checkbox"></li>
-                    </ul>
-                    <br>
-                    <button type="submit">Enviar Pedido</button>
-                    <button type="submit">Borrar Todo</button>
+                        <ul>
+                            <li><label for="">Bombillon de Alpaca </label><input type="checkbox"></li>
+                            <li><label for="">Bombillon de Acero Inoxidable </label><input type="checkbox"></li>
+                            <li><label for="">Bombilla Pico Loro Alpaca </label><input type="checkbox"></li>
+                            <li><label for="">Bombilla Pico Loro Acero Inoxidable </label><input type="checkbox"></li>
+                        </ul>
+                        <br>
+                        <button type="submit" class="tab-btn">Enviar Pedido</button>
+                        <button type="submit" class="tab-btn">Borrar Todo</button>
                     </div>
                 </form>
             </section>
@@ -132,6 +144,6 @@
         <p>&copy; Todos los derechos reservados.</p>
     </footer>
 
-    <script src="js/scripts.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
