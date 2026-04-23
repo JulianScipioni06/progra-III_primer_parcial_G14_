@@ -11,13 +11,12 @@
     cursor: pointer;
     font-weight: 600;
     text-decoration: none;
-
-    transition: background-color 0.3s;
 }
 
 .tab-btn:hover {
     background-color:var(--marron);
     color: var(--blanco);
     box-shadow: 0 4px 8px #000000;
+    transition: background-color 0.3s;
 }
 
