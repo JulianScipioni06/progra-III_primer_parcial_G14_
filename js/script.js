@@ -15,3 +15,10 @@ tabs.forEach(tab => {
         
     });
 });
+
+let pedir = document.querySelectorAll("#pedir");
+let borrar = document.querySelectorAll("#borrar");
+
+pedir.addEventListener("click", function() {
+    alert('Todavia no esta hecha esta funcion');
+});

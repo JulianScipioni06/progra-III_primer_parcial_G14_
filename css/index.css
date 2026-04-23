@@ -20,41 +20,46 @@
     width: 100%;
 }
 
-/* --- CONFIGURACIÓN DE LA LISTA --- */
+.productos-grid {
+    display: flex;
+    flex-direction: row;
+}
+
+#seccion-productos h2{
+    margin-bottom: 8px;
+}
+
 .tabs-list {
-    display: flex;           /* ¡La magia de Flexbox! Pone los elementos uno al lado del otro */
-    justify-content: center; /* Centra los botones en el medio de la pantalla */
-    gap: 10px;               /* Le da un pequeño espacio de separación entre cada botón */
-    list-style: none;        /* Esto es lo que hace desaparecer los puntitos negros */
+    display: flex;          
+    justify-content: center; 
+    gap: 10px;              
+    list-style: none;        
     padding: 0;
     margin: 0;
 }
 
-/* --- ESTÉTICA DE LOS BOTONES --- */
+
 .tab-btn {
     padding: 10px 25px;
-    background-color: var(--gris-claro); /* Usamos tu variable de color */
+    background-color: var(--gris-claro); 
     color: var(--verde);
     border: none;
-    border-radius: 8px 8px 0 0; /* Bordes redondeados solo arriba para que parezca una pestaña real */
+    border-radius: 8px 8px 0 0; 
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s ease; /* Hace que el cambio de color sea suave */
+    transition: all 0.3s ease; 
 }
 
-/* Efecto cuando el usuario pasa el mouse por encima */
 .tab-btn:hover {
     background-color: var(--marron);
     color: var(--blanco);
 }
 
-/* --- EL ESTADO ACTIVO --- */
-/* Así se ve la pestaña que está seleccionada actualmente */
 .tab-btn.active {
     background-color: var(--verde);
     color: var(--blanco);
-    border-bottom: 3px solid var(--marron); /* Un detalle visual extra para destacarla */
+    border-bottom: 3px solid var(--marron); 
 }
 
 .tab-section {

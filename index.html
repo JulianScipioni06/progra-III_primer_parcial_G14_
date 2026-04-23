@@ -37,20 +37,33 @@
         </nav>
 
         <div class="tabs-content">
-            
             <section id="seccion-inicio" class="tab-section active">
                 <h2>Bienvenidos a Cultura Matera</h2>
                 <p>Navegá por las pestañas para ver nuestro catálogo exclusivo de mates y más.</p>
             </section>
 
             <section id="seccion-productos" class="tab-section">
+                <h2>Catálogo de Productos</h2>
                 <div class="productos-grid">
-                    <h2>Catálogo de Productos</h2>
+                    <article class="card-vertical">
+                        <img src="./assets/img/mate-imperial.jpg" alt="mate imperial" class="card-vertical-imagen">
+                        <div class="card-vertical-contenido"> 
+                            <h4 class="card-vertical-titulo">Mate Imperial</h4>
+                            <p class="card-vertical-descripcion">Mate imperial de Cuero con Virola de Acero</p>
+                        </div>
+                    </article>
                     <article class="card-vertical">
                         <img src="./assets/img/canasta-cuero.jpg" alt="bolso-matero" class="card-vertical-imagen">
                         <div class="card-vertical-contenido"> 
                             <h4 class="card-vertical-titulo">Canasta de Cuero</h4>
                             <p class="card-vertical-descripcion">canasta de cuero ideal para llevar el mate</p>
+                        </div>
+                    </article>
+                    <article class="card-vertical">
+                        <img src="./assets/img/bombilla-pico-loro-alpaca.png" alt="bombilla pico loro" class="card-vertical-imagen">
+                        <div class="card-vertical-contenido"> 
+                            <h4 class="card-vertical-titulo">Bombilla Pico Loro</h4>
+                            <p class="card-vertical-descripcion">Bombilla Pico loro hecha de alpaca</p>
                         </div>
                     </article>
                 </div>
@@ -128,8 +141,8 @@
                         <li><label for="">Bombilla Pico Loro Acero Inoxidable </label><input type="checkbox"></li>
                     </ul>
                     <br>
-                    <button type="submit">Enviar Pedido</button>
-                    <button type="submit">Borrar Todo</button>
+                    <button type="submit" class="tab-btn" id="pedir">Enviar Pedido</button>
+                    <button type="submit" class="tab-btn" id="borrar">Borrar Todo</button>
                     </div>
                 </form>
             </section>
