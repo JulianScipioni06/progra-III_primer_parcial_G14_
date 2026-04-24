@@ -7,6 +7,7 @@
     
     <link rel="icon" href="assets/favicon/logo.png">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/components/form.css">
 </head>
 <body>
     <header class="header-global">
@@ -60,19 +61,22 @@
             </section>
 
             <section id="seccion-pedido" class="tab-section">
-                <h2>Iniciá tu pedido</h2>
                 <form id="formulario-compra" class="form-container">
+                    <h2>Iniciá tu pedido</h2>
+                <div class="form-columnas">
                     <!--Aca se hace el formulario de pedido-->
+                    <div class="col-izquierda">
                     <h3>Datos del Cliente</h3>
                     <div class="datos-cliente">
-                    
                     <input type="text" placeholder="Nombre Completo">
                     <input type="number" placeholder="Telefono">
                     <input type="email" placeholder="Email">
                     <input type="text" placeholder="Direccion">
                     <br>
                     </div>
+                    </div>
 
+                    <div class="col-derecha">
                     <h3>Arma tu Pedido</h3>
                     <h4>Mates</h4>
                     <div class="mates">
@@ -131,9 +135,13 @@
                             <li><label for="">Bombilla Pico Loro Acero Inoxidable </label><input type="checkbox"></li>
                         </ul>
                         <br>
+                    </div>
+                    <div class="form-botones">
                         <button type="submit" class="tab-btn">Enviar Pedido</button>
                         <button type="submit" class="tab-btn">Borrar Todo</button>
+                        </div>
                     </div>
+                </div>
                 </form>
             </section>
 
