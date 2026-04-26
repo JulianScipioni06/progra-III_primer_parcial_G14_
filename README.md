@@ -8,26 +8,29 @@ Cultura Matera es una pagina simple desarrollada para la venta de mates y acceso
 
 ## Tecnologías Utilizadas
 * **HTML5:** Estructura semántica.
-* **CSS3:** Flexbox, variables CSS, transiciones y componentes modulares.
+* **CSS3:** Flexbox, variables CSS, y componentes modulares.
 * **JavaScript (Vanilla):** Eventos (`addEventListener`), manipulación del DOM (`querySelectorAll`, `classList`, `getAttribute`) y validaciones lógicas.
 
 ## Estructura del Proyecto
 El repositorio sigue la arquitectura de carpetas exigida por la cátedra:
 
-```text
-Cultura-Matera
- ┣ assets/            # Recursos generales
- ┃ ┣ favicon/         # Logos e íconos de pestaña
- ┃ ┗ img/             # Imágenes de los productos
- ┣ css/               # Hojas de estilo
- ┃ ┣ components/      # Estilos modulares (botones, tarjetas, form, nav)
- ┃ ┗ index.css        # Variables globales, importaciones y layout principal
- ┣ js/                # Lógica del proyecto
- ┃ ┗ script.js        # Eventos de navegación y validación del formulario
- ┣ pages/             # Carpeta para archivos HTML extra (no utilizada, arquitectura SPA)
- ┣ index.html         # Archivo principal y punto de entrada
- ┗ README.md          # Documentación del proyecto
-´´´
+Cultura-Matera/
+│
+├── assets/              # Recursos estáticos
+│   ├── favicon/         # Íconos del sitio
+│   └── img/             # Imágenes de productos
+│
+├── css/                 # Estilos del proyecto
+│   ├── components/      # Estilos reutilizables (botones, cards, forms, navbar)
+│   └── index.css        # Estilos globales, variables y layout principal
+│
+├── js/                  # Lógica en JavaScript
+│   └── script.js        # Navegación entre secciones y validaciones
+│
+├── pages/               # Páginas adicionales (no utilizadas - SPA)
+│
+├── index.html           # Punto de entrada de la aplicación
+└── README.md            # Documentación del proyecto
 
 ## Metodología de Trabajo y Control de Versiones
 El desarrollo se llevó a cabo utilizando Git y GitHub.
