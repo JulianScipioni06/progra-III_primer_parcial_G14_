@@ -1,0 +1,47 @@
+@import url(../index.css);
+
+.card-vertical {
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    width: 250px;
+    background-color: var(--marron);
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 4px solid transparent;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+.card-vertical:hover {
+    transform: translateY(-5px);
+    border-bottom-color: var(--verde);
+}
+
+.card-vertical-imagen {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.card-vertical-contenido {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-vertical-titulo {
+    margin: 0 0 8px 0;
+    padding-left: 5px;
+    font-size: 1.25rem;
+    color: #f8fafc;
+}
+
+.card-vertical-descripcion {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #f8fafc;
+    line-height: 1.5;
+}

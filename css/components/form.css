@@ -1,0 +1,68 @@
+.form-container {
+    background-color: var(--verde-claro);
+    color: #1a1a1a;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    max-width: 850px;
+    margin: 40px auto 80px auto;
+    text-align: left;
+}
+
+.form-columnas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.col-izquierda, .col-derecha{
+    flex: 1;
+    min-width: 300px;
+}
+
+.form-container h2,
+.form-container h3,
+.form-container h4 {
+    border-left: 4px solid var(--marron);
+    padding-left: 12px;
+    margin-bottom: 14px;
+    font-weight: 600;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="email"],
+.form-container select,
+.form-container option {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 14px;
+    background-color: var(--blanco);
+    border: 1px solid var(--gris-claro);
+    color: var(--gris-oscuro);
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.form-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.form-container li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--gris-claro);
+}

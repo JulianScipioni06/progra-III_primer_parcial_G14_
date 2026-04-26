@@ -1,0 +1,8 @@
+footer {
+  padding: 16px;
+  margin-top: auto;
+  text-align: center;
+  background: var(--marron);
+  color: var(--blanco);
+  font-size: 16px;
+}

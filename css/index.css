@@ -1,0 +1,85 @@
+@import url(./components/button.css);
+@import url(./components/cards.css);
+@import url(./components/footer.css);
+@import url(./components/nav.css);
+@import url(./components/form.css);
+
+:root {
+    --verde: #4f5d3d;
+    --verde-claro: #dcedd9;
+    --marron: #7d5c3e;
+    --blanco: #f5f2e9;
+    --gris-claro: #eae3d2;
+    --gris-oscuro: #1a1a1a;
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 40px 0; 
+    width: 100%;
+    min-height: 76vh;
+}
+
+.tabs-list {
+    display: flex;          
+    justify-content: center; 
+    gap: 10px;              
+    list-style: none;        
+    padding: 0;
+    margin: 0;
+}
+
+.tab-btn:hover {
+    background-color: var(--marron);
+    color: var(--blanco);
+}
+
+.tab-btn.active {
+    background-color: var(--verde);
+    color: var(--blanco);
+    border-bottom: 3px solid var(--marron); 
+}
+
+.tab-section {
+    display: none; 
+}
+
+.tab-section.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center; 
+    padding: 20px 0;
+}
+
+#seccion-productos h2 {
+    margin-bottom: 8px;
+}
+
+.productos-grid {
+    display: flex;
+    flex-direction: row;
+}
+
+#formulario-compra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.datos-cliente { 
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
