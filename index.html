@@ -7,7 +7,6 @@
     
     <link rel="icon" href="assets/favicon/logo.png">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/components/form.css">
 </head>
 <body>
     <header class="header-global">
@@ -66,79 +65,78 @@
                 <div class="form-columnas">
                     <!--Aca se hace el formulario de pedido-->
                     <div class="col-izquierda">
-                    <h3>Datos del Cliente</h3>
-                    <div class="datos-cliente">
-                    <input type="text" placeholder="Nombre Completo">
-                    <input type="number" placeholder="Telefono">
-                    <input type="email" placeholder="Email">
-                    <input type="text" placeholder="Direccion">
-                    <br>
-                    </div>
+                        <h3>Datos del Cliente</h3>
+                        <div class="datos-cliente">
+                            <input type="text" id="nombre" placeholder="Nombre Completo">
+                            <input type="number" id="telefono" placeholder="Telefono">
+                            <input type="email" id="email" placeholder="Email">
+                            <input type="text" id="direccion" placeholder="Direccion">
+                        </div>
                     </div>
 
                     <div class="col-derecha">
                     <h3>Arma tu Pedido</h3>
                     <h4>Mates</h4>
                     <div class="mates">
-                        <label for="">Tipo:</label>
+                        <label for="tipo">Tipo:</label>
                         <select>
                             <option value="">Seleccione una opcion...</option>
-                            <option value="">Imperial</option>
-                            <option value="">Camionero</option>
-                            <option value="">Torpedo</option>
-                            <option value="">Criollo</option>
+                            <option value="imperial">Imperial</option>
+                            <option value="camionero">Camionero</option>
+                            <option value="torpedo">Torpedo</option>
+                            <option value="criollo">Criollo</option>
                         </select>
                         <br>
 
-                        <label for="">Color:</label>
+                        <label for="color">Color:</label>
                         <select>
                             <option value="">Seleccione una opcion...</option>
-                            <option value="">Negro</option>
-                            <option value="">Marron</option>
+                            <option value="negro">Negro</option>
+                            <option value="marron">Marron</option>
                         </select>
                         <br>
-                        <label for="">Tamaño</label>
+                        <label for="tamaño">Tamaño</label>
                         <br>
-                        <label for="">S</label>
+                        <label>S</label>
                         <input type="checkbox">
-                        <label for="">M</label>
+                        <label>M</label>
                         <input type="checkbox">
-                        <label for="">L</label>
+                        <label>L</label>
                         <input type="checkbox">
-                        <label for="">XL</label>
+                        <label>XL</label>
                         <input type="checkbox">
                         <br>
-                        <label for="">Material:</label>
+                        <label for="material">Material:</label>
                         <select>
                             <option value="">Seleccione una opcion...</option>
-                            <option value="">Calabaza</option>
-                            <option value="">Acero</option>
-                            <option value="">Algorrobo</option>
+                            <option value="calabaza">Calabaza</option>
+                            <option value="acero">Acero</option>
+                            <option value="algarrobo">Algarrobo</option>
                         </select>
                     </div>
                     
                     <h4>Bolsos y Materas</h4>
                     <div class="bolsos">
                         <ul>
-                            <li><label for="">Bolso Matero </label><input type="checkbox"></li>
-                            <li><label for="">Canasta de Cuero </label><input type="checkbox"></li>
-                            <li><label for="">Canaste de Ecocuero </label><input type="checkbox"></li>
+                            <li><label for="bolso-matero">Bolso Matero </label><input type="checkbox"></li>
+                            <li><label for="canasta-cuero">Canasta de Cuero </label><input type="checkbox"></li>
+                            <li><label for="canasta-ecocuero">Canaste de Ecocuero </label><input type="checkbox"></li>
                         </ul>
                     </div>
 
                     <h4>Bombillas y Bombillones</h4>
                     <div class="bombillas">
                         <ul>
-                            <li><label for="">Bombillon de Alpaca </label><input type="checkbox"></li>
-                            <li><label for="">Bombillon de Acero Inoxidable </label><input type="checkbox"></li>
-                            <li><label for="">Bombilla Pico Loro Alpaca </label><input type="checkbox"></li>
-                            <li><label for="">Bombilla Pico Loro Acero Inoxidable </label><input type="checkbox"></li>
+                            <li><label>Bombillon de Alpaca </label><input type="checkbox"></li>
+                            <li><label>Bombillon de Acero Inoxidable </label><input type="checkbox"></li>
+                            <li><label>Bombilla Pico Loro Alpaca </label><input type="checkbox"></li>
+                            <li><label>Bombilla Pico Loro Acero Inoxidable </label><input type="checkbox"></li>
                         </ul>
                         <br>
                     </div>
                     <div class="form-botones">
                         <button type="submit" class="tab-btn">Enviar Pedido</button>
-                        <button type="submit" class="tab-btn">Borrar Todo</button>
+                        <button type="reset" class="tab-btn">Borrar Todo</button>
                         </div>
                     </div>
                 </div>
