@@ -2,7 +2,7 @@
 @import url(./components/cards.css);
 @import url(./components/footer.css);
 @import url(./components/nav.css);
-
+@import url(./components/form.css);
 
 :root {
     --verde: #4f5d3d;
@@ -29,15 +29,6 @@
     min-height: 76vh;
 }
 
-.productos-grid {
-    display: flex;
-    flex-direction: row;
-}
-
-#seccion-productos h2{
-    margin-bottom: 8px;
-}
-
 .tabs-list {
     display: flex;          
     justify-content: center; 
@@ -45,19 +36,6 @@
     list-style: none;        
     padding: 0;
     margin: 0;
-}
-
-
-.tab-btn {
-    padding: 10px 25px;
-    background-color: var(--gris-claro); 
-    color: var(--verde);
-    border: none;
-    border-radius: 8px 8px 0 0; 
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease; 
 }
 
 .tab-btn:hover {
@@ -75,12 +53,6 @@
     display: none; 
 }
 
-
-.tab-section.active {
-    display: block; 
-}
-
-
 .tab-section.active {
     display: flex;
     flex-direction: column;
@@ -88,6 +60,15 @@
     width: 100%;
     text-align: center; 
     padding: 20px 0;
+}
+
+#seccion-productos h2 {
+    margin-bottom: 8px;
+}
+
+.productos-grid {
+    display: flex;
+    flex-direction: row;
 }
 
 #formulario-compra {
