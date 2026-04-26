@@ -14,6 +14,7 @@ Cultura Matera es una pagina simple desarrollada para la venta de mates y acceso
 ## Estructura del Proyecto
 El repositorio sigue la arquitectura de carpetas exigida por la cátedra:
 
+```text
 Cultura-Matera
  ┣ assets/            # Recursos generales
  ┃ ┣ favicon/         # Logos e íconos de pestaña
@@ -26,6 +27,7 @@ Cultura-Matera
  ┣ pages/             # Carpeta para archivos HTML extra (no utilizada, arquitectura SPA)
  ┣ index.html         # Archivo principal y punto de entrada
  ┗ README.md          # Documentación del proyecto
+´´´
 
 ## Metodología de Trabajo y Control de Versiones
 El desarrollo se llevó a cabo utilizando Git y GitHub.
